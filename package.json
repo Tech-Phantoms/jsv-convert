@@ -1,0 +1,11 @@
+{
+  "name": "jsv-convert",
+  "version": "1.0.0",
+  "description": "Converts json file to csv file ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Souvik",
+  "license": "ISC"
+}
