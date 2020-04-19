@@ -6,6 +6,28 @@
 
 
 ---
+ Converts Javascript object to csv file
+
+## Installation 
+```
+npm i jsv-convert
+```
+
+## In Nodejs 
+```
+const {prepareTable} = require('../index')
+
+const params = [{laguage: 'Javascript',rating: 10},{laguage: 'Dart',rating: 10}]
+const data = prepareTable(params) // pass in a array of objects 
+
+console.log(data)
+```
+
+Outputs the data in a array suitable for csv file format 
 
 
- Converts json file to csv file
+| language      | rating        
+| ------------- |:-------------:|
+| Javascript    | 10            |
+| Dart          | 10            |
+
