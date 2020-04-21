@@ -3,11 +3,18 @@
   "version": "1.0.2",
   "description": "Converts json file to csv file ",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ninja-Developers/jsv-convert"
+  },
   "scripts": {
     "test": "jest"
   },
   "author": "Souvik",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ninja-Developers/jsv-convert/issues"
+  },
   "devDependencies": {
     "jest": "^25.3.0"
   },
