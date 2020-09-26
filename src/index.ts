@@ -1,5 +1,1 @@
-const check = () => {
-    return "Hello World"
-}
-
-export {check}
+export * as FileConverter from './core'
