@@ -1,6 +1,6 @@
 {
   "name": "jsv-convert",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Converts json file to csv file ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
