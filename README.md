@@ -13,6 +13,20 @@
 npm i jsv-convert
 ```
 
+
+##  💼 Code of Conduct
+
+We want to facilitate a healthy and constructive community behavior by adopting and enforcing our code of conduct.
+
+Please adhere towards our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+
+## ❤️ Thanks to our awesome contributors.
+
+### 🌟 STAR AND FORK THE REPOSITORY FOR YOUR FUTURE REFERENCE.🌟
+
+
+
 ## In Nodejs 
 ```
 const {prepareTable} = require('../index')
@@ -30,4 +44,3 @@ Outputs the data in a array suitable for csv file format
 | ------------- |:-------------:|
 | Javascript    | 10            |
 | Dart          | 10            |
-
