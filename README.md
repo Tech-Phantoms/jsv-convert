@@ -14,6 +14,10 @@ npm i jsv-convert
 ```
 ---
 
+## 🏆 Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md)  for information on how to contribute to the project.
+
 ##  💼 Code of Conduct
 
 We want to facilitate a healthy and constructive community behavior by adopting and enforcing our code of conduct.
