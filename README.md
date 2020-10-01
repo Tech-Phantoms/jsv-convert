@@ -36,11 +36,75 @@ const data = prepareTable(params) // pass in a array of objects
 
 console.log(data)
 ```
+## Usage
+This is a utility library for converting JSON data to CSV format
 
+### Examples:-
+JSON
+```json
+const data = [
+	{"language": "javascript", "rating": 5},
+	{"language": "java", "rating": 5}
+]
+```
+CSV
+```json
+const data = `
+	language, rating
+	javascript, 5
+	java, 5
+`
+```
+---
+* JSON
+```json
+const data = [
+	{"fruit": "Apple","size": "Large","color": "Red"},
+	{"fruit": "Mango","size": "Small","color": "Yellow"},
+	{"fruit": "Tangerine","size": "Large","color": "Orange"}
+]
+```
+CSV
+```json
+const data =  ` 
+	fruit, size, color
+	Apple, Large,Red  
+	Mango, Small, Yellow
+	Tangerine, Large, Orange
+`
+```
+---
+JSON
+```json
+const data={
+    "firstName": "Rack",
+    "lastName": "Jackon",
+    "gender": "man",
+    "age": 24,
+    "address": {
+        "streetAddress": "126",
+        "city": "San Jone",
+        "state": "CA",
+        "postalCode": "394221"
+    },
+    "phoneNumbers": [
+        { "type": "home", "number": "7383627627" }
+    ]
+}
+```
+CSV
+```json
+const data = `
+	firstName, lastName, gender, age, address_streetAddress, address_city, 
+	address_state, address_postalCode, phoneNumbers_type, phoneNumbers_number
+	Rack, Jackon, man, 24, 126, San Jone, CA, 394221, home, 7383627627
+`
+```
 Outputs the data in a array suitable for csv file format 
 
 
-| language      | rating        
+
+| language      | rating        |
 | ------------- |:-------------:|
 | Javascript    | 10            |
 | Dart          | 10            |
