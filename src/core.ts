@@ -59,8 +59,7 @@ export class FileConverter {
         this.columns.forEach((el: string) => {
             colStr += el + "\n"
         })
-        return `${fieldString}
-${colStr}`
+        return `${fieldString}\n${colStr}`
     }
     generateCsvFile(path: string) {
         fs.writeFileSync(path, this.csvFormat);
