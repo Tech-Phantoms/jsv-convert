@@ -54,8 +54,12 @@ export class FileConverter {
 
     generateCsvFormat(): string {
         let fieldString: string = ''
-        this.fields.forEach((el: string) => {
-            fieldString += el + ','
+        const fieldsCount = this.fields.length;
+        this.fields.forEach((el: string, i: number) => {
+            fieldString += el;
+            if(i < fieldsCount - 1) {
+              fieldString += ','
+            }
         })
         let colStr: string = ''
         this.columns.forEach((el: string) => {
@@ -67,4 +71,3 @@ export class FileConverter {
         fs.writeFileSync(path, this.csvFormat);
     }
 }
-
