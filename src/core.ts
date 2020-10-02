@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-class FileConverter {
+export class FileConverter {
     private path: string;
     private data: Array<any>;
     private fields: Array<string>;
@@ -50,21 +50,19 @@ class FileConverter {
         return columns
     }
 
-    generateCsvFormat(): string{
+    generateCsvFormat(): string {
         let fieldString: string = ''
         this.fields.forEach((el: string) => {
-            fieldString+=el+','
+            fieldString += el + ','
         })
         let colStr: string = ''
         this.columns.forEach((el: string) => {
-            colStr+=el+"\n"
+            colStr += el + "\n"
         })
         return `${fieldString}
 ${colStr}`
     }
-    generateCsvFile(path: string){
+    generateCsvFile(path: string) {
         fs.writeFileSync(path, this.csvFormat);
     }
 }
-
-export default FileConverter

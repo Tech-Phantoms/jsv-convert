@@ -9,7 +9,7 @@
     "url": "https://github.com/Ninja-Developers/jsv-convert"
   },
   "scripts": {
-    "test": "jest",
+    "test": "npm run build && jest",
     "prepublish": "tsc",
     "build": "tsc"
   },
