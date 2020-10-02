@@ -45,8 +45,8 @@ This is a utility library for converting JSON data to CSV format
 
 Steps to be followed :-
 * Import `FileCoverter` class
-* Create an obejct of `FileConverter` which takes path of the file to be converted as parameter
-* invoke `generateCsvformat()` methos
+* Create an object of `FileConverter` which takes path of the file to be converted as parameter
+* invoke `generateCsvformat()` method
 * `generateCsvformat()` method returns csv data as a string  
 * `generateCsvFile(path: string)` takes path of file as argument and writes conveted data to file
 ```typescript
@@ -56,7 +56,7 @@ import path from 'path'
 const fc = new FileConverter(path.join(__dirname,'data.json')) // takes path of the file as a parameter
 
 console.log(fc.generateCsvFormat())
-fc.generateCsvFile(path)
+fc.generateCsvFile(path)            
 ```
 
 
