@@ -33,15 +33,17 @@ export class FileConverter {
 
     generateColumns(): Array<string> {
         let columns: Array<string> = []
+        const fieldsCount = this.fields.length;
 
         this.data.forEach((el: any) => {
             let row: string = ''
-            this.fields.forEach((f: string) => {
+            this.fields.forEach((f: string, i: number) => {
                 if (el[f]) {
-                    row += el[f] + ','
-
-                } else {
-                    row += ','
+                    row += el[f]
+                }
+                // Adding comma
+                if (i < fieldsCount - 1) {
+                  row += ','
                 }
             })
             columns.push(row)
@@ -65,3 +67,4 @@ export class FileConverter {
         fs.writeFileSync(path, this.csvFormat);
     }
 }
+
