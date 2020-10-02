@@ -1,1 +1,5 @@
-export * as FileConverter from './core'
+import { FileConverter } from './core'
+
+export {
+    FileConverter
+}
