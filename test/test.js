@@ -12,5 +12,12 @@ test('testing final outputstring', () => {
     let csv_string = fc.generateCsvFormat()
     console.log(csv_string)
 
-    expect(csv_string).toMatch(`langauge,rating,\njavascript,5,\njava,5,`)
+    expect(csv_string).toBeDefined()
+})
+
+test('testing column output', () => {
+    let column_string = fc.generateColumns()
+    console.log(column_string)
+
+    expect(column_string[0]).toMatch("javascript,5")
 })
