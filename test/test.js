@@ -21,3 +21,11 @@ test('testing column output', () => {
 
     expect(column_string[0]).toMatch("javascript,5")
 })
+
+test('testing field output', () => {
+    let fields_array = fc.generateFields()
+    console.log(fields_array)
+
+    expect(fields_array).toContain("langauge")
+    expect(fields_array).toContain("rating")
+})
